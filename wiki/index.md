@@ -6,12 +6,14 @@ Welcome to your persistent knowledge base. This index provides a catalog of all 
 
 ## 📚 Concepts
 - [[LLM Wiki Pattern]]: Persistent, compounding knowledge base architecture maintained by AI agents.
+- [[Wikilinks]]: Obsidian-compatible cross-referencing and graph linking syntax.
 - [[Web Basics Stack]]: Native HTML, CSS, and JavaScript structure and presentation.
 - [[Python Starter Architecture]]: Idiomatic Python patterns, data structures, and OOP design.
 
 ## 👤 Entities
 - [[ilk-repo]]: The main workspace repository containing codebases and the LLM Wiki.
 - [[Suleiman]]: Author and maintainer of the project codebase.
+- [[wiki_tools]]: CLI utility for searching, linting, and analyzing the LLM Wiki graph.
 
 ## 📄 Sources
 - [[codebase-ilk-repo]]: Summary of the multi-language repository codebase (`html/`, `css/`, `js/`, `python/`).

@@ -4,6 +4,11 @@ Append-only record of operations performed on the wiki (ingests, queries, synthe
 
 ---
 
+## [2026-08-19] tool | wiki_tools CLI Implementation
+- Built `python/wiki_tools.py` with `lint`, `search`, and `stats` subcommands.
+- Created entity page [[wiki_tools]] and updated schema in [AGENTS.md](file:///Users/macbookairm2/Documents/GitHub/ilk-repo/AGENTS.md).
+- Automated link validation and knowledge graph analytics.
+
 ## [2026-08-19] synthesis | Knowledge Architecture and Codebase Synthesis
 - Generated deep cross-cutting synthesis page [[Knowledge Architecture and Codebase Synthesis]].
 - Unified concepts, entities, and sources into an integrated architecture diagram and compounding workflow.

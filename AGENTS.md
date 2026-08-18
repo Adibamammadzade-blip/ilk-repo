@@ -64,3 +64,12 @@ When the user requests a health check or lint pass:
    ---
    ```
 3. **Immutability of `raw/`**: Never modify or overwrite files in the `raw/` directory.
+
+---
+
+## 4. Maintenance & CLI Tools
+
+A dedicated Python CLI is available at `python/wiki_tools.py` for automated operations:
+- `python3 python/wiki_tools.py lint` : Run link integrity, orphan detection, and frontmatter verification.
+- `python3 python/wiki_tools.py search "<term>"` : Full-text keyword and title search across the knowledge base.
+- `python3 python/wiki_tools.py stats` : Compute graph connectivity metrics and list core hubs.
