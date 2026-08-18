@@ -4,6 +4,13 @@ Append-only record of operations performed on the wiki (ingests, queries, synthe
 
 ---
 
+## [2026-08-19] synthesis | Evolution of Knowledge Systems (Memex to LLM Wiki)
+- Ingested foundational PKM history and comparative theories.
+- Created concepts [[Memex]], [[Zettelkasten Method]], and [[Retrieval-Augmented Generation]].
+- Created entities [[Vannevar Bush]] and [[Niklas Luhmann]].
+- Generated synthesis [[Evolution of Knowledge Systems - Memex to LLM Wiki]] comparing maintenance economics.
+- Updated catalog [[index.md]].
+
 ## [2026-08-19] web-app | Interactive LLM Wiki Explorer Web UI
 - Built full-featured interactive web application in `html/index.html`, `css/index.css`, `js/index.js`.
 - Implemented force-directed interactive 2D graph view on HTML5 Canvas with drag/drop, zoom, pan, and real-time physics.
