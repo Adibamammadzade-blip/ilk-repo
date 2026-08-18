@@ -1,0 +1,6 @@
+# Obsidian configuration & workspace state
+.obsidian/
+
+# OS metadata
+.DS_Store
+Thumbs.db
