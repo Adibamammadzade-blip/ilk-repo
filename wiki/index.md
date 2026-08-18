@@ -18,4 +18,4 @@ Welcome to your persistent knowledge base. This index provides a catalog of all 
 - [[llm-wiki-idea]]: The original architecture document outlining the LLM Wiki pattern.
 
 ## 🧠 Synthesis & Deep Dives
-*(No synthesis pages created yet)*
+- [[Knowledge Architecture and Codebase Synthesis]]: Unified synthesis bridging repository code, developer entities, and the LLM Wiki ecosystem.
