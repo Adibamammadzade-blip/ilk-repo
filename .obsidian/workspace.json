@@ -1,0 +1,207 @@
+{
+  "main": {
+    "id": "ddc086bef09b2fd4",
+    "type": "split",
+    "children": [
+      {
+        "id": "8fd1a9a80e89f813",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cda5b507b4be49ab",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4062945e3af7a794",
+    "type": "split",
+    "children": [
+      {
+        "id": "f75615eada472757",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "efbbebffac66b07c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "c69183bc4b8d096d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "4189c4bd4cc88f36",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "99e6fd398500acb3",
+    "type": "split",
+    "children": [
+      {
+        "id": "9beed7f5d3b3bde0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b74fd79c7aa060a9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "wiki/syntheses/rag-vs-llm-wiki.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "66f7139126da27ad",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "wiki/syntheses/rag-vs-llm-wiki.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "bc90aae3ecbf3769",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "b70857ad3e8a41d4",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "7c9abd9f3e094d63",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "wiki/syntheses/rag-vs-llm-wiki.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "cda5b507b4be49ab",
+  "lastOpenFiles": [
+    "wiki/concepts/persistent-knowledge-bases.md",
+    "wiki/entities/vannevar-bush.md",
+    "wiki/entities/memex.md",
+    "wiki/entities/douglas-engelbart.md",
+    "wiki/concepts/h-lam-t-system.md",
+    "wiki/concepts/associative-trails.md",
+    "raw/papers/augmenting-human-intellect-engelbart-1962.md",
+    "raw/papers/as-we-may-think-bush-1945.md",
+    "python/wiki_lint.py",
+    "raw/notes/llm-wiki-concept.md",
+    "wiki/entities/qmd.md",
+    "wiki/entities/obsidian.md",
+    "wiki/entities/marp.md",
+    "wiki/entities/ilk-repo.md",
+    "wiki/entities/dataview.md",
+    "wiki/syntheses/obsidian-llm-wiki-guide.md",
+    "wiki/sources/codebase-starter-modules.md"
+  ]
+}
