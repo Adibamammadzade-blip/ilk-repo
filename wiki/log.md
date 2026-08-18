@@ -4,6 +4,11 @@ Append-only record of operations performed on the wiki (ingests, queries, synthe
 
 ---
 
+## [2026-08-19] docs | Master Documentation & Obsidian Workflow Guide
+- Authored root [README.md](file:///Users/macbookairm2/Documents/GitHub/ilk-repo/README.md) covering every file, script, tool, and setup instructions.
+- Authored synthesis guide [[Obsidian and LLM Wiki Workflow Guide]].
+- Updated catalog [[index.md]].
+
 ## [2026-08-19] synthesis | Evolution of Knowledge Systems (Memex to LLM Wiki)
 - Ingested foundational PKM history and comparative theories.
 - Created concepts [[Memex]], [[Zettelkasten Method]], and [[Retrieval-Augmented Generation]].

@@ -15,6 +15,20 @@
       "path": "wiki/index.md"
     },
     {
+      "id": "Obsidian and LLM Wiki Workflow Guide",
+      "title": "\"Obsidian and LLM Wiki Workflow Guide\"",
+      "type": "synthesis",
+      "tags": [
+        "synthesis",
+        "obsidian",
+        "workflow",
+        "guide",
+        "pkm",
+        "agent-pair"
+      ],
+      "path": "wiki/synthesis/Obsidian and LLM Wiki Workflow Guide.md"
+    },
+    {
       "id": "Knowledge Architecture and Codebase Synthesis",
       "title": "\"Knowledge Architecture and Codebase Synthesis\"",
       "type": "synthesis",
@@ -218,6 +232,14 @@
   "edges": [
     {
       "source": "log",
+      "target": "Obsidian and LLM Wiki Workflow Guide"
+    },
+    {
+      "source": "log",
+      "target": "index"
+    },
+    {
+      "source": "log",
       "target": "Memex"
     },
     {
@@ -338,6 +360,42 @@
     },
     {
       "source": "index",
+      "target": "Evolution of Knowledge Systems - Memex to LLM Wiki"
+    },
+    {
+      "source": "index",
+      "target": "Obsidian and LLM Wiki Workflow Guide"
+    },
+    {
+      "source": "Obsidian and LLM Wiki Workflow Guide",
+      "target": "LLM Wiki Pattern"
+    },
+    {
+      "source": "Obsidian and LLM Wiki Workflow Guide",
+      "target": "LLM Wiki Pattern"
+    },
+    {
+      "source": "Obsidian and LLM Wiki Workflow Guide",
+      "target": "Zettelkasten Method"
+    },
+    {
+      "source": "Obsidian and LLM Wiki Workflow Guide",
+      "target": "Memex"
+    },
+    {
+      "source": "Obsidian and LLM Wiki Workflow Guide",
+      "target": "Wikilinks"
+    },
+    {
+      "source": "Obsidian and LLM Wiki Workflow Guide",
+      "target": "wiki_tools"
+    },
+    {
+      "source": "Obsidian and LLM Wiki Workflow Guide",
+      "target": "Knowledge Architecture and Codebase Synthesis"
+    },
+    {
+      "source": "Obsidian and LLM Wiki Workflow Guide",
       "target": "Evolution of Knowledge Systems - Memex to LLM Wiki"
     },
     {
@@ -712,7 +770,7 @@
       "tags": [],
       "created": "",
       "updated": "",
-      "content": "# Operations Log (log.md)\n\nAppend-only record of operations performed on the wiki (ingests, queries, synthesis, lints).\n\n---\n\n## [2026-08-19] synthesis | Evolution of Knowledge Systems (Memex to LLM Wiki)\n- Ingested foundational PKM history and comparative theories.\n- Created concepts [[Memex]], [[Zettelkasten Method]], and [[Retrieval-Augmented Generation]].\n- Created entities [[Vannevar Bush]] and [[Niklas Luhmann]].\n- Generated synthesis [[Evolution of Knowledge Systems - Memex to LLM Wiki]] comparing maintenance economics.\n- Updated catalog [[index.md]].\n\n## [2026-08-19] web-app | Interactive LLM Wiki Explorer Web UI\n- Built full-featured interactive web application in `html/index.html`, `css/index.css`, `js/index.js`.\n- Implemented force-directed interactive 2D graph view on HTML5 Canvas with drag/drop, zoom, pan, and real-time physics.\n- Added live search, category pills filtering, and client-side markdown reader with clickable `[[Wikilinks]]`.\n- Added `python3 python/wiki_tools.py export` command to generate synchronized `wiki/wiki_data.json`.\n\n## [2026-08-19] tool | wiki_tools CLI Implementation\n- Built `python/wiki_tools.py` with `lint`, `search`, and `stats` subcommands.\n- Created entity page [[wiki_tools]] and updated schema in [AGENTS.md](file:///Users/macbookairm2/Documents/GitHub/ilk-repo/AGENTS.md).\n- Automated link validation and knowledge graph analytics.\n\n## [2026-08-19] synthesis | Knowledge Architecture and Codebase Synthesis\n- Generated deep cross-cutting synthesis page [[Knowledge Architecture and Codebase Synthesis]].\n- Unified concepts, entities, and sources into an integrated architecture diagram and compounding workflow.\n\n## [2026-08-19] lint | Wiki Health Check Pass\n- Checked all wikilinks: 100% resolution (0 broken links).\n- Checked orphan pages: 0 orphan pages detected.\n- Verified YAML frontmatter compliance across all 8 markdown documents.\n- Wiki status: **Healthy & Fully Synced**.\n\n## [2026-08-19] ingest | ilk-repo Codebase\n- Ingested repository source files (`html/index.html`, `css/index.css`, `js/index.js`, `python/main.py`).\n- Created source summary [[codebase-ilk-repo]].\n- Created entities [[ilk-repo]] and [[Suleiman]].\n- Created concepts [[Web Basics Stack]] and [[Python Starter Architecture]].\n- Updated catalog [[index.md]].\n\n## [2026-08-19] init | Initialized LLM Wiki Architecture\n- Created workspace structure: `raw/`, `wiki/sources/`, `wiki/entities/`, `wiki/concepts/`, `wiki/synthesis/`.\n- Configured [AGENTS.md](file:///Users/macbookairm2/Documents/GitHub/ilk-repo/AGENTS.md) schema & operational protocols.\n- Initialized catalog [index.md](file:///Users/macbookairm2/Documents/GitHub/ilk-repo/wiki/index.md) and inaugural concept/source pages.\n",
+      "content": "# Operations Log (log.md)\n\nAppend-only record of operations performed on the wiki (ingests, queries, synthesis, lints).\n\n---\n\n## [2026-08-19] docs | Master Documentation & Obsidian Workflow Guide\n- Authored root [README.md](file:///Users/macbookairm2/Documents/GitHub/ilk-repo/README.md) covering every file, script, tool, and setup instructions.\n- Authored synthesis guide [[Obsidian and LLM Wiki Workflow Guide]].\n- Updated catalog [[index.md]].\n\n## [2026-08-19] synthesis | Evolution of Knowledge Systems (Memex to LLM Wiki)\n- Ingested foundational PKM history and comparative theories.\n- Created concepts [[Memex]], [[Zettelkasten Method]], and [[Retrieval-Augmented Generation]].\n- Created entities [[Vannevar Bush]] and [[Niklas Luhmann]].\n- Generated synthesis [[Evolution of Knowledge Systems - Memex to LLM Wiki]] comparing maintenance economics.\n- Updated catalog [[index.md]].\n\n## [2026-08-19] web-app | Interactive LLM Wiki Explorer Web UI\n- Built full-featured interactive web application in `html/index.html`, `css/index.css`, `js/index.js`.\n- Implemented force-directed interactive 2D graph view on HTML5 Canvas with drag/drop, zoom, pan, and real-time physics.\n- Added live search, category pills filtering, and client-side markdown reader with clickable `[[Wikilinks]]`.\n- Added `python3 python/wiki_tools.py export` command to generate synchronized `wiki/wiki_data.json`.\n\n## [2026-08-19] tool | wiki_tools CLI Implementation\n- Built `python/wiki_tools.py` with `lint`, `search`, and `stats` subcommands.\n- Created entity page [[wiki_tools]] and updated schema in [AGENTS.md](file:///Users/macbookairm2/Documents/GitHub/ilk-repo/AGENTS.md).\n- Automated link validation and knowledge graph analytics.\n\n## [2026-08-19] synthesis | Knowledge Architecture and Codebase Synthesis\n- Generated deep cross-cutting synthesis page [[Knowledge Architecture and Codebase Synthesis]].\n- Unified concepts, entities, and sources into an integrated architecture diagram and compounding workflow.\n\n## [2026-08-19] lint | Wiki Health Check Pass\n- Checked all wikilinks: 100% resolution (0 broken links).\n- Checked orphan pages: 0 orphan pages detected.\n- Verified YAML frontmatter compliance across all 8 markdown documents.\n- Wiki status: **Healthy & Fully Synced**.\n\n## [2026-08-19] ingest | ilk-repo Codebase\n- Ingested repository source files (`html/index.html`, `css/index.css`, `js/index.js`, `python/main.py`).\n- Created source summary [[codebase-ilk-repo]].\n- Created entities [[ilk-repo]] and [[Suleiman]].\n- Created concepts [[Web Basics Stack]] and [[Python Starter Architecture]].\n- Updated catalog [[index.md]].\n\n## [2026-08-19] init | Initialized LLM Wiki Architecture\n- Created workspace structure: `raw/`, `wiki/sources/`, `wiki/entities/`, `wiki/concepts/`, `wiki/synthesis/`.\n- Configured [AGENTS.md](file:///Users/macbookairm2/Documents/GitHub/ilk-repo/AGENTS.md) schema & operational protocols.\n- Initialized catalog [index.md](file:///Users/macbookairm2/Documents/GitHub/ilk-repo/wiki/index.md) and inaugural concept/source pages.\n",
       "path": "wiki/log.md"
     },
     "index": {
@@ -721,8 +779,24 @@
       "tags": [],
       "created": "",
       "updated": "",
-      "content": "# Wiki Catalog (index.md)\n\nWelcome to your persistent knowledge base. This index provides a catalog of all pages across the wiki, organized by category.\n\n---\n\n## \ud83d\udcda Concepts\n- [[LLM Wiki Pattern]]: Persistent, compounding knowledge base architecture maintained by AI agents.\n- [[Memex]]: 1945 theoretical associative knowledge workstation by Vannevar Bush.\n- [[Zettelkasten Method]]: Atomic, networked slip-box note-taking methodology by Niklas Luhmann.\n- [[Retrieval-Augmented Generation]]: Vector search and dynamic chunk injection vs. compiled persistent knowledge.\n- [[Wikilinks]]: Obsidian-compatible cross-referencing and graph linking syntax.\n- [[Web Basics Stack]]: Interactive Knowledge Graph & Document Explorer Web UI built with HTML5, Canvas, CSS3, and JavaScript.\n- [[Python Starter Architecture]]: Idiomatic Python patterns, data structures, and OOP design.\n\n## \ud83d\udc64 Entities\n- [[ilk-repo]]: The main workspace repository containing codebases and the LLM Wiki.\n- [[Suleiman]]: Author and maintainer of the project codebase.\n- [[Vannevar Bush]]: Pioneer of associative indexing, Memex creator, and science administrator.\n- [[Niklas Luhmann]]: Prolific sociologist and creator of the physical Zettelkasten slip-box.\n- [[wiki_tools]]: CLI utility for searching, linting, and analyzing the LLM Wiki graph.\n\n## \ud83d\udcc4 Sources\n- [[codebase-ilk-repo]]: Summary of the multi-language repository codebase (`html/`, `css/`, `js/`, `python/`).\n- [[llm-wiki-idea]]: The original architecture document outlining the LLM Wiki pattern.\n\n## \ud83e\udde0 Synthesis & Deep Dives\n- [[Knowledge Architecture and Codebase Synthesis]]: Unified synthesis bridging repository code, developer entities, and the LLM Wiki ecosystem.\n- [[Evolution of Knowledge Systems - Memex to LLM Wiki]]: 80-year historical trajectory from Memex and Zettelkasten to modern persistent AI wikis.\n",
+      "content": "# Wiki Catalog (index.md)\n\nWelcome to your persistent knowledge base. This index provides a catalog of all pages across the wiki, organized by category.\n\n---\n\n## \ud83d\udcda Concepts\n- [[LLM Wiki Pattern]]: Persistent, compounding knowledge base architecture maintained by AI agents.\n- [[Memex]]: 1945 theoretical associative knowledge workstation by Vannevar Bush.\n- [[Zettelkasten Method]]: Atomic, networked slip-box note-taking methodology by Niklas Luhmann.\n- [[Retrieval-Augmented Generation]]: Vector search and dynamic chunk injection vs. compiled persistent knowledge.\n- [[Wikilinks]]: Obsidian-compatible cross-referencing and graph linking syntax.\n- [[Web Basics Stack]]: Interactive Knowledge Graph & Document Explorer Web UI built with HTML5, Canvas, CSS3, and JavaScript.\n- [[Python Starter Architecture]]: Idiomatic Python patterns, data structures, and OOP design.\n\n## \ud83d\udc64 Entities\n- [[ilk-repo]]: The main workspace repository containing codebases and the LLM Wiki.\n- [[Suleiman]]: Author and maintainer of the project codebase.\n- [[Vannevar Bush]]: Pioneer of associative indexing, Memex creator, and science administrator.\n- [[Niklas Luhmann]]: Prolific sociologist and creator of the physical Zettelkasten slip-box.\n- [[wiki_tools]]: CLI utility for searching, linting, and analyzing the LLM Wiki graph.\n\n## \ud83d\udcc4 Sources\n- [[codebase-ilk-repo]]: Summary of the multi-language repository codebase (`html/`, `css/`, `js/`, `python/`).\n- [[llm-wiki-idea]]: The original architecture document outlining the LLM Wiki pattern.\n\n## \ud83e\udde0 Synthesis & Deep Dives\n- [[Knowledge Architecture and Codebase Synthesis]]: Unified synthesis bridging repository code, developer entities, and the LLM Wiki ecosystem.\n- [[Evolution of Knowledge Systems - Memex to LLM Wiki]]: 80-year historical trajectory from Memex and Zettelkasten to modern persistent AI wikis.\n- [[Obsidian and LLM Wiki Workflow Guide]]: Practical guide on configuring, visualizing, and collaborating in Obsidian with the LLM Wiki.\n",
       "path": "wiki/index.md"
+    },
+    "Obsidian and LLM Wiki Workflow Guide": {
+      "title": "\"Obsidian and LLM Wiki Workflow Guide\"",
+      "type": "synthesis",
+      "tags": [
+        "synthesis",
+        "obsidian",
+        "workflow",
+        "guide",
+        "pkm",
+        "agent-pair"
+      ],
+      "created": "2026-08-19",
+      "updated": "2026-08-19",
+      "content": "---\ntitle: \"Obsidian and LLM Wiki Workflow Guide\"\ntype: synthesis\ncreated: 2026-08-19\nupdated: 2026-08-19\ntags: [synthesis, obsidian, workflow, guide, pkm, agent-pair]\n---\n\n# Obsidian & LLM Wiki Workflow Guide\n\nA practical handbook on configuring, navigating, and collaborating with your LLM Wiki inside Obsidian.\n\n---\n\n## 1. The Core Philosophy: Obsidian as IDE, LLM as Developer\n\nIn modern software development, developers use IDEs (like VS Code or JetBrains) to write and inspect code. In the [[LLM Wiki Pattern]]:\n- **The Wiki (`wiki/`) is the Codebase**: Plaintext markdown files organized into entities, concepts, sources, and synthesis.\n- **The LLM is the Programmer**: Reads raw sources, writes structured markdown, maintains `[[Wikilinks]]`, resolves inconsistencies, and appends to `log.md`.\n- **Obsidian is the Knowledge IDE**: You use Obsidian to read notes, navigate backlinks, explore the interactive graph view, and direct research.\n\n---\n\n## 2. Setting Up Your Workspace in Obsidian\n\n1. **Open Vault**:\n   - Open Obsidian.\n   - Click **\"Open folder as vault\"** and select `/Users/macbookairm2/Documents/GitHub/ilk-repo`.\n2. **Recommended Settings**:\n   - **Files and links**:\n     - *New link format*: **Shortest path when possible** (uses `[[Page Name]]`).\n     - *Use `[[Wikilinks]]`*: **ON**.\n     - *Default location for new attachments*: `raw/assets/` (or in subfolder).\n3. **Graph View Navigation**:\n   - Press `Cmd + G` to open the **Graph View**.\n   - Color code your nodes by folder or tag:\n     - Purple for `type: concept` / `wiki/concepts`\n     - Green for `type: entity` / `wiki/entities`\n     - Cyan for `type: source` / `wiki/sources`\n     - Amber for `type: synthesis` / `wiki/synthesis`\n\n---\n\n## 3. The Daily Operational Cycle\n\n```text\nStep 1: Input (Human)\n  \u2514\u2500 You drop an article or notes into `raw/` or paste in chat.\n\nStep 2: Compilation (LLM)\n  \u2514\u2500 LLM creates `wiki/sources/<slug>.md`, updates relevant concepts/entities,\n     refreshes `wiki/index.md`, and logs the operation in `wiki/log.md`.\n\nStep 3: Exploration (Human in Obsidian)\n  \u2514\u2500 You open Obsidian on your screen, see new nodes light up in Graph View,\n     and follow associative trails.\n\nStep 4: Compounding Synthesis (Human + LLM)\n  \u2514\u2500 You ask exploratory questions; valuable insights are saved back into `wiki/synthesis/`.\n```\n\n---\n\n## 4. Why This Outperforms Traditional Note-Taking\n\n| Traditional Human Note-Taking | LLM-Maintained Persistent Wiki |\n| :--- | :--- |\n| **High Maintenance Burden**: Hours spent tagging, filing, and fixing links. | **Zero Maintenance Cost**: LLM handles cross-linking and indexing instantly. |\n| **Entropy & Abandonment**: Wikis get messy and outdated as they grow. | **Self-Healing**: Automated linters (`wiki_tools.py lint`) and periodic agent audits keep links fresh. |\n| **Isolated Notes**: Hard to spot cross-source contradictions. | **Automatic Synthesis**: LLM flags corroborations and contradictions across sources. |\n\n---\n\n## Related Links\n- [[LLM Wiki Pattern]]\n- [[Zettelkasten Method]]\n- [[Memex]]\n- [[Wikilinks]]\n- [[wiki_tools]]\n- [[Knowledge Architecture and Codebase Synthesis]]\n- [[Evolution of Knowledge Systems - Memex to LLM Wiki]]\n",
+      "path": "wiki/synthesis/Obsidian and LLM Wiki Workflow Guide.md"
     },
     "Knowledge Architecture and Codebase Synthesis": {
       "title": "\"Knowledge Architecture and Codebase Synthesis\"",
@@ -958,7 +1032,7 @@
     }
   },
   "stats": {
-    "totalPages": 18,
-    "totalLinks": 122
+    "totalPages": 19,
+    "totalLinks": 133
   }
 }

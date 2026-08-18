@@ -27,3 +27,4 @@ Welcome to your persistent knowledge base. This index provides a catalog of all 
 ## 🧠 Synthesis & Deep Dives
 - [[Knowledge Architecture and Codebase Synthesis]]: Unified synthesis bridging repository code, developer entities, and the LLM Wiki ecosystem.
 - [[Evolution of Knowledge Systems - Memex to LLM Wiki]]: 80-year historical trajectory from Memex and Zettelkasten to modern persistent AI wikis.
+- [[Obsidian and LLM Wiki Workflow Guide]]: Practical guide on configuring, visualizing, and collaborating in Obsidian with the LLM Wiki.
