@@ -4,6 +4,12 @@ Chronological audit log of all wiki ingests, queries, syntheses, and linting pas
 
 ---
 
+## [2026-08-18] lint | Link Resolution & Entity Expansion Pass
+- **Operation:** Vault Health Audit & Lint
+- **Resolved Entities:** [[wiki/entities/dataview|Dataview]], [[wiki/entities/marp|Marp]], [[wiki/entities/qmd|qmd]]
+- **Touched:** `wiki/index.md`, `wiki/sources/llm-wiki-concept.md`
+- **Summary:** Verified link graph integrity. Resolved 3 unlinked entity references from the genesis document into mature entity pages and updated the master index.
+
 ## [2026-08-18] ingest | Initial Codebase & Starter Modules
 - **Operation:** Codebase Ingestion
 - **Raw Files:** `html/index.html`, `css/index.css`, `js/index.js`, `python/main.py`

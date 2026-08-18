@@ -10,6 +10,9 @@ Welcome to your LLM-maintained Knowledge Base. This index is a living catalog of
 ## 🛠️ Entities & Tools
 - [[obsidian|Obsidian]]: Local-first markdown editor, graph visualization tool, and knowledge IDE.
 - [[ilk-repo|ilk-repo]]: The core multi-language sandbox and repository architecture.
+- [[dataview|Dataview]]: Obsidian query plugin for structured YAML frontmatter analysis.
+- [[marp|Marp]]: Markdown slide deck generator for presentations.
+- [[qmd|qmd]]: Local hybrid search engine (BM25 + vector search + re-ranking) for markdown vaults.
 
 ## 🔬 Syntheses & Deep Dives
 - [[rag-vs-llm-wiki|Synthesis: RAG vs LLM-Maintained Wiki]]: Detailed comparative matrix between traditional vector retrieval and compounding wikis.
