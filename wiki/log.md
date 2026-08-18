@@ -4,6 +4,14 @@ Chronological audit log of all wiki ingests, queries, syntheses, and linting pas
 
 ---
 
+## [2026-08-18] ingest | Initial Codebase & Starter Modules
+- **Operation:** Codebase Ingestion
+- **Raw Files:** `html/index.html`, `css/index.css`, `js/index.js`, `python/main.py`
+- **Source Note:** [[wiki/sources/codebase-starter-modules|Initial Codebase & Starter Modules]]
+- **Created Pages:**
+  - [[wiki/entities/ilk-repo|ilk-repo]]
+- **Summary:** Extracted architecture, language breakdown (HTML/CSS/JS + Python), and class models from the existing repository codebase into the wiki.
+
 ## [2026-08-18] ingest | LLM Wiki Concept (Genesis Source)
 - **Operation:** Ingest & Bootstrap
 - **Raw File:** `raw/notes/llm-wiki-concept.md`
