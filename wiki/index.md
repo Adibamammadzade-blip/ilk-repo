@@ -16,6 +16,7 @@ Welcome to your LLM-maintained Knowledge Base. This index is a living catalog of
 
 ## 🔬 Syntheses & Deep Dives
 - [[rag-vs-llm-wiki|Synthesis: RAG vs LLM-Maintained Wiki]]: Detailed comparative matrix between traditional vector retrieval and compounding wikis.
+- [[obsidian-llm-wiki-guide|Guide: Obsidian & The LLM Wiki Paradigm]]: Deep-dive guide explaining the human-agent collaboration and Obsidian IDE workflow.
 
 ## 📚 Ingested Sources
 - [[llm-wiki-concept|LLM Wiki: A Pattern for Building Personal Knowledge Bases Using LLMs]] (2026-08-18) — Founding idea document defining the 3-layer architecture.

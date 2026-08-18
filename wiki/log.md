@@ -4,6 +4,12 @@ Chronological audit log of all wiki ingests, queries, syntheses, and linting pas
 
 ---
 
+## [2026-08-18] synthesis | Obsidian & The LLM Wiki Paradigm Guide
+- **Operation:** Query & Compound Synthesis
+- **Created Synthesis:** [[wiki/syntheses/obsidian-llm-wiki-guide|Guide: Obsidian & The LLM Wiki Paradigm]]
+- **Touched:** `README.md`, `wiki/index.md`
+- **Summary:** Authored master repository documentation in `README.md` and compiled a comprehensive architectural synthesis explaining the symbiotic relationship between Obsidian, local markdown vaults, and autonomous LLM agents.
+
 ## [2026-08-18] feat | Local Wiki Search Engine (wiki_search.py)
 - **Operation:** Tooling & Ingest
 - **Added Tool:** `python/wiki_search.py`
