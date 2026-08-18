@@ -4,6 +4,12 @@ Append-only record of operations performed on the wiki (ingests, queries, synthe
 
 ---
 
+## [2026-08-19] web-app | Interactive LLM Wiki Explorer Web UI
+- Built full-featured interactive web application in `html/index.html`, `css/index.css`, `js/index.js`.
+- Implemented force-directed interactive 2D graph view on HTML5 Canvas with drag/drop, zoom, pan, and real-time physics.
+- Added live search, category pills filtering, and client-side markdown reader with clickable `[[Wikilinks]]`.
+- Added `python3 python/wiki_tools.py export` command to generate synchronized `wiki/wiki_data.json`.
+
 ## [2026-08-19] tool | wiki_tools CLI Implementation
 - Built `python/wiki_tools.py` with `lint`, `search`, and `stats` subcommands.
 - Created entity page [[wiki_tools]] and updated schema in [AGENTS.md](file:///Users/macbookairm2/Documents/GitHub/ilk-repo/AGENTS.md).

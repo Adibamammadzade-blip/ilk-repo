@@ -7,7 +7,7 @@ Welcome to your persistent knowledge base. This index provides a catalog of all 
 ## 📚 Concepts
 - [[LLM Wiki Pattern]]: Persistent, compounding knowledge base architecture maintained by AI agents.
 - [[Wikilinks]]: Obsidian-compatible cross-referencing and graph linking syntax.
-- [[Web Basics Stack]]: Native HTML, CSS, and JavaScript structure and presentation.
+- [[Web Basics Stack]]: Interactive Knowledge Graph & Document Explorer Web UI built with HTML5, Canvas, CSS3, and JavaScript.
 - [[Python Starter Architecture]]: Idiomatic Python patterns, data structures, and OOP design.
 
 ## 👤 Entities

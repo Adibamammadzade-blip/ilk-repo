@@ -3,10 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My first repository</title>
+    <title>LLM Wiki Explorer | ilk-repo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
-    <h1>My first repository</h1>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-icon">🧠</div>
+                <div class="brand-info">
+                    <h1>LLM Wiki</h1>
+                    <span class="repo-badge">ilk-repo / suleiman</span>
+                </div>
+            </div>
+
+            <div class="search-box">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="searchInput" placeholder="Search concepts, entities, sources..." autocomplete="off">
+            </div>
+
+            <div class="filter-pills" id="filterPills">
+                <button class="pill active" data-filter="all">All (<span id="count-all">0</span>)</button>
+                <button class="pill" data-filter="concept">Concepts (<span id="count-concept">0</span>)</button>
+                <button class="pill" data-filter="entity">Entities (<span id="count-entity">0</span>)</button>
+                <button class="pill" data-filter="source">Sources (<span id="count-source">0</span>)</button>
+                <button class="pill" data-filter="synthesis">Synthesis (<span id="count-synthesis">0</span>)</button>
+            </div>
+
+            <div class="pages-list" id="pagesList">
+                <!-- Dynamically generated page list -->
+            </div>
+
+            <div class="sidebar-footer">
+                <div class="stat-item">
+                    <span class="stat-label">Nodes</span>
+                    <span class="stat-value" id="statNodes">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Links</span>
+                    <span class="stat-value" id="statLinks">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Health</span>
+                    <span class="stat-value health-badge">100% OK</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Workspace -->
+        <main class="main-content">
+            <!-- Header Tabs -->
+            <header class="top-nav">
+                <div class="view-switchers">
+                    <button class="nav-btn active" id="tabGraph">🌐 Graph View</button>
+                    <button class="nav-btn" id="tabDoc">📄 Document Reader</button>
+                </div>
+                <div class="active-page-title" id="activePageHeader">
+                    <span class="type-indicator" id="headerTypeIndicator">Concept</span>
+                    <span class="title-text" id="headerTitle">Select a page or explore the graph</span>
+                </div>
+            </header>
+
+            <div class="content-body">
+                <!-- Graph View Area -->
+                <section class="view-panel" id="graphViewPanel">
+                    <div class="graph-toolbar">
+                        <span class="hint-text">💡 Drag nodes to arrange • Click to open • Scroll to zoom</span>
+                        <button class="tool-btn" id="btnResetGraph">Reset Layout</button>
+                    </div>
+                    <canvas id="graphCanvas"></canvas>
+                </section>
+
+                <!-- Document Reader Area -->
+                <section class="view-panel hidden" id="docViewPanel">
+                    <div class="document-container">
+                        <div class="doc-meta-card" id="docMetaCard">
+                            <!-- Dynamic frontmatter & tags -->
+                        </div>
+                        <article class="markdown-body" id="docMarkdownBody">
+                            <!-- Rendered markdown content -->
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="../js/index.js"></script>
 </body>
 </html>

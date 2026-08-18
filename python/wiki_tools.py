@@ -186,6 +186,65 @@ def run_stats():
     print("========================================")
 
 
+def run_export(output_path: Path = None):
+    """Export the entire wiki structure, pages, and graph edges to a JSON file."""
+    import json
+    if output_path is None:
+        output_path = WIKI_DIR / "wiki_data.json"
+        
+    pages = get_all_wiki_pages()
+    nodes = []
+    edges = []
+    page_contents = {}
+    
+    for page_name, path in pages.items():
+        if path.name == "wiki_data.json":
+            continue
+        content = path.read_text(encoding="utf-8")
+        fm, body = extract_frontmatter(content)
+        page_type = fm.get("type", "page")
+        tags = [t.strip(" []") for t in fm.get("tags", "").split(",") if t.strip(" []")]
+        
+        nodes.append({
+            "id": page_name,
+            "title": fm.get("title", page_name),
+            "type": page_type,
+            "tags": tags,
+            "path": str(path.relative_to(WIKI_DIR.parent))
+        })
+        
+        page_contents[page_name] = {
+            "title": fm.get("title", page_name),
+            "type": page_type,
+            "tags": tags,
+            "created": fm.get("created", ""),
+            "updated": fm.get("updated", ""),
+            "content": content,
+            "path": str(path.relative_to(WIKI_DIR.parent))
+        }
+        
+        links = extract_wikilinks(content)
+        for link in links:
+            if link in pages and link != page_name:
+                edges.append({
+                    "source": page_name,
+                    "target": link
+                })
+                
+    data = {
+        "nodes": nodes,
+        "edges": edges,
+        "pages": page_contents,
+        "stats": {
+            "totalPages": len(nodes),
+            "totalLinks": len(edges)
+        }
+    }
+    
+    output_path.write_text(json.dumps(data, indent=2), encoding="utf-8")
+    print(f"✅ Successfully exported wiki data ({len(nodes)} nodes, {len(edges)} edges) to: {output_path}")
+
+
 def main():
     parser = argparse.ArgumentParser(description="LLM Wiki Maintenance & Search CLI")
     subparsers = parser.add_subparsers(dest="command", help="Available commands")
@@ -200,6 +259,10 @@ def main():
     search_parser = subparsers.add_parser("search", help="Search the wiki for keywords")
     search_parser.add_argument("query", type=str, help="Search query")
     
+    # Export command
+    export_parser = subparsers.add_parser("export", help="Export wiki and graph to JSON")
+    export_parser.add_argument("--output", "-o", type=str, default=None, help="Output JSON file path")
+    
     args = parser.parse_args()
     
     if args.command == "lint":
@@ -208,6 +271,9 @@ def main():
         run_stats()
     elif args.command == "search":
         run_search(args.query)
+    elif args.command == "export":
+        out = Path(args.output) if args.output else None
+        run_export(out)
     else:
         parser.print_help()
 
