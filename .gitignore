@@ -1,0 +1,9 @@
+# Obsidian workspace & internal files
+.obsidian/
+*.trash/
+
+# OS & temporary files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp

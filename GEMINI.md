@@ -31,6 +31,7 @@ As the LLM Agent, you act as the **curator, librarian, and architect** of this w
 2. **Wiki is Compounding:** Knowledge is synthesized once and kept current across all pages. Updates to one concept must ripple across related pages.
 3. **Hyperlinked by Default:** Use Obsidian-style double bracket wikilinks: `[[Target Page]]` or `[[Target Page|Custom Label]]`.
 4. **No Dangling Claims:** Every key factual claim in `wiki/` should link back to its source page in `wiki/sources/`.
+5. **Git Protocol (Commit, Never Push):** The agent automatically stages and commits changes (`git add`, `git commit`) after completing tasks/ingests. The agent **MUST NEVER** execute `git push` — pushing to remote repositories is exclusively reserved for the human user.
 
 ---
 
