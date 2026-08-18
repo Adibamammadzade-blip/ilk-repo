@@ -26,4 +26,5 @@ status: mature
 - Source extraction: [[as-we-may-think-bush-1945]]
 - Device concept: [[memex]]
 - Core concept: [[associative-trails]]
-- Synthesis: [[memex-to-llm-wiki-evolution]]
+- Intellectual successor: [[douglas-engelbart]]
+- Syntheses: [[memex-to-llm-wiki-evolution]], [[engelbart-bush-symbiosis-ai]]

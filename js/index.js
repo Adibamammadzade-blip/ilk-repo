@@ -18,7 +18,7 @@ const VAULT_DATA = [
         path: "wiki/concepts/persistent-knowledge-bases.md",
         tags: ["knowledge-architecture", "rag", "llm-wiki", "mental-models"],
         excerpt: "An evolving, pre-compiled body of structured markdown where connections and conceptual syntheses are explicitly linked and maintained over time, resolving the stateless limitation of traditional RAG.",
-        links: ["llm-wiki-concept", "as-we-may-think-bush-1945", "associative-trails", "obsidian", "rag-vs-llm-wiki", "memex-to-llm-wiki-evolution"]
+        links: ["llm-wiki-concept", "as-we-may-think-bush-1945", "associative-trails", "obsidian", "rag-vs-llm-wiki", "memex-to-llm-wiki-evolution", "h-lam-t-system"]
     },
     {
         id: "associative-trails",
@@ -29,7 +29,18 @@ const VAULT_DATA = [
         path: "wiki/concepts/associative-trails.md",
         tags: ["hypertext", "mental-models", "knowledge-graphs", "associative-indexing"],
         excerpt: "Non-linear multi-hop pathways linking diverse items across a knowledge base based on conceptual relationships rather than rigid taxonomic classifications. Coined by Vannevar Bush in 1945.",
-        links: ["as-we-may-think-bush-1945", "vannevar-bush", "memex", "persistent-knowledge-bases", "memex-to-llm-wiki-evolution"]
+        links: ["as-we-may-think-bush-1945", "vannevar-bush", "memex", "persistent-knowledge-bases", "memex-to-llm-wiki-evolution", "h-lam-t-system"]
+    },
+    {
+        id: "h-lam-t-system",
+        title: "The H-LAM/T System",
+        type: "concept",
+        status: "mature",
+        date: "2026-08-19",
+        path: "wiki/concepts/h-lam-t-system.md",
+        tags: ["mental-models", "cognitive-architecture", "engelbart", "human-ai-symbiosis"],
+        excerpt: "Douglas Engelbart's 1962 cognitive augmentation framework asserting that human problem-solving capability is an emergent property of Human + Language + Artifacts + Methodology + Training.",
+        links: ["augmenting-human-intellect-engelbart-1962", "douglas-engelbart", "persistent-knowledge-bases", "associative-trails", "engelbart-bush-symbiosis-ai"]
     },
     {
         id: "obsidian",
@@ -40,7 +51,7 @@ const VAULT_DATA = [
         path: "wiki/entities/obsidian.md",
         tags: ["tools", "pkm", "markdown", "graph-view", "local-first"],
         excerpt: "Local-first, extensible markdown knowledge IDE. Acts as the graphical workbench and graph visualizer for human exploration, while the LLM acts as the autonomous programmer/maintainer.",
-        links: ["llm-wiki-concept", "persistent-knowledge-bases", "dataview", "marp"]
+        links: ["llm-wiki-concept", "persistent-knowledge-bases", "dataview", "marp", "obsidian-llm-wiki-guide"]
     },
     {
         id: "vannevar-bush",
@@ -51,7 +62,18 @@ const VAULT_DATA = [
         path: "wiki/entities/vannevar-bush.md",
         tags: ["people", "pioneers", "memex", "hypertext", "computer-science"],
         excerpt: "American engineer and science administrator (1890–1974) who directed the OSRD and authored the 1945 vision for the Memex and associative indexing.",
-        links: ["as-we-may-think-bush-1945", "memex", "associative-trails", "memex-to-llm-wiki-evolution"]
+        links: ["as-we-may-think-bush-1945", "memex", "associative-trails", "douglas-engelbart", "memex-to-llm-wiki-evolution", "engelbart-bush-symbiosis-ai"]
+    },
+    {
+        id: "douglas-engelbart",
+        title: "Douglas Engelbart",
+        type: "entity",
+        status: "mature",
+        date: "2026-08-19",
+        path: "wiki/entities/douglas-engelbart.md",
+        tags: ["people", "pioneers", "hci", "hypertext", "cognitive-augmentation"],
+        excerpt: "Pioneer of interactive computing (1925–2013) who invented the computer mouse, collaborative real-time hypertext (NLS), and formulated the H-LAM/T cognitive augmentation framework.",
+        links: ["augmenting-human-intellect-engelbart-1962", "vannevar-bush", "h-lam-t-system", "obsidian", "engelbart-bush-symbiosis-ai"]
     },
     {
         id: "memex",
@@ -73,7 +95,7 @@ const VAULT_DATA = [
         path: "wiki/entities/ilk-repo.md",
         tags: ["project", "repository", "full-stack", "python", "web"],
         excerpt: "The host repository containing full-stack starter templates (HTML/CSS/JS), Python demonstration modules, local search engine tools, and the LLM Wiki engine.",
-        links: ["codebase-starter-modules", "llm-wiki-concept", "memex-to-llm-wiki-evolution"]
+        links: ["codebase-starter-modules", "llm-wiki-concept", "memex-to-llm-wiki-evolution", "obsidian-llm-wiki-guide"]
     },
     {
         id: "dataview",
@@ -95,7 +117,7 @@ const VAULT_DATA = [
         path: "wiki/entities/marp.md",
         tags: ["tools", "presentation", "slides", "markdown"],
         excerpt: "Markdown-based slide deck ecosystem used to render presentations and executive briefings directly from synthesized wiki pages.",
-        links: ["obsidian", "llm-wiki-concept"]
+        links: ["obsidian", "llm-wiki-concept", "llm-wiki-architecture-slides"]
     },
     {
         id: "qmd",
@@ -107,6 +129,17 @@ const VAULT_DATA = [
         tags: ["tools", "cli", "search-engine", "hybrid-search", "bm25"],
         excerpt: "Local hybrid search engine (BM25 + on-device vector re-ranking) for querying markdown vaults via CLI or native MCP server.",
         links: ["llm-wiki-concept"]
+    },
+    {
+        id: "engelbart-bush-symbiosis-ai",
+        title: "From Bush and Engelbart to LLM Agentic Co-Intelligence",
+        type: "synthesis",
+        status: "mature",
+        date: "2026-08-19",
+        path: "wiki/syntheses/engelbart-bush-symbiosis-ai.md",
+        tags: ["intellectual-augmentation", "symbiosis", "memex", "engelbart", "llm-wiki"],
+        excerpt: "Synthesis detailing the 80-year evolution of cognitive augmentation from Bush's associative trails and Engelbart's H-LAM/T system to autonomous agentic wiki co-intelligence.",
+        links: ["as-we-may-think-bush-1945", "augmenting-human-intellect-engelbart-1962", "vannevar-bush", "douglas-engelbart", "memex", "h-lam-t-system", "associative-trails"]
     },
     {
         id: "memex-to-llm-wiki-evolution",
@@ -142,6 +175,17 @@ const VAULT_DATA = [
         links: ["llm-wiki-concept", "obsidian", "ilk-repo", "persistent-knowledge-bases"]
     },
     {
+        id: "llm-wiki-architecture-slides",
+        title: "Slide Deck: LLM Wiki Architecture",
+        type: "synthesis",
+        status: "mature",
+        date: "2026-08-19",
+        path: "wiki/syntheses/llm-wiki-architecture-slides.md",
+        tags: ["marp", "presentation", "architecture", "slides", "llm-wiki"],
+        excerpt: "6-slide Marp presentation deck summarizing the tri-layer architecture, operational workflows, and historical evolution of persistent knowledge bases.",
+        links: ["llm-wiki-concept", "as-we-may-think-bush-1945", "marp"]
+    },
+    {
         id: "as-we-may-think-bush-1945",
         title: "As We May Think (Vannevar Bush, 1945)",
         type: "source",
@@ -153,6 +197,17 @@ const VAULT_DATA = [
         links: ["vannevar-bush", "memex", "associative-trails", "persistent-knowledge-bases", "llm-wiki-concept"]
     },
     {
+        id: "augmenting-human-intellect-engelbart-1962",
+        title: "Augmenting Human Intellect: Framework (Engelbart, 1962)",
+        type: "source",
+        status: "mature",
+        date: "2026-08-19",
+        path: "wiki/sources/augmenting-human-intellect-engelbart-1962.md",
+        tags: ["engelbart", "cognitive-augmentation", "h-lam-t", "symbiosis", "bootstrapping"],
+        excerpt: "Extraction of Douglas Engelbart's 1962 foundational report formulating the H-LAM/T system, external symbol manipulation, and recursive bootstrapping for cognitive leverage.",
+        links: ["douglas-engelbart", "vannevar-bush", "h-lam-t-system", "persistent-knowledge-bases", "associative-trails"]
+    },
+    {
         id: "llm-wiki-concept",
         title: "LLM Wiki: Pattern for Building Personal Knowledge Bases",
         type: "source",
@@ -161,7 +216,7 @@ const VAULT_DATA = [
         path: "wiki/sources/llm-wiki-concept.md",
         tags: ["knowledge-management", "llm", "obsidian", "zettelkasten", "memex"],
         excerpt: "The founding concept document defining the tri-layer architecture (Raw, Wiki, Schema) and autonomous agent workflows (Ingest, Query, Lint).",
-        links: ["persistent-knowledge-bases", "obsidian", "marp", "dataview", "qmd", "rag-vs-llm-wiki"]
+        links: ["persistent-knowledge-bases", "obsidian", "marp", "dataview", "qmd", "rag-vs-llm-wiki", "llm-wiki-architecture-slides"]
     },
     {
         id: "codebase-starter-modules",
@@ -251,7 +306,7 @@ function renderCards() {
         nodesGrid.innerHTML = `
             <div style="grid-column: 1/-1; text-align: center; padding: 60px 20px; color: var(--text-muted);">
                 <h3>No matching vault nodes found</h3>
-                <p>Try searching for terms like 'memex', 'rag', 'bush', or clear the category filter.</p>
+                <p>Try searching for terms like 'memex', 'engelbart', 'rag', 'bush', or clear filters.</p>
             </div>
         `;
         return;
@@ -333,7 +388,7 @@ function closeModal() {
 function initGraph() {
     const svg = document.getElementById("knowledge-graph-svg");
     const container = document.getElementById("graph-container");
-    const width = container.clientWidth || 800;
+    const width = container.clientWidth || 850;
     const height = 600;
 
     svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
@@ -349,7 +404,7 @@ function initGraph() {
     // Calculate dynamic node positions (radial clustered layout)
     const nodes = VAULT_DATA.map((node, i) => {
         const angle = (i / VAULT_DATA.length) * 2 * Math.PI;
-        const radius = 180 + (i % 3) * 45;
+        const radius = 190 + (i % 3) * 45;
         return {
             ...node,
             x: width / 2 + Math.cos(angle) * radius,
@@ -390,7 +445,7 @@ function initGraph() {
         g.style.color = typeColors[node.type];
 
         const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-        const radius = 12 + Math.min(node.links.length * 2, 16);
+        const radius = 11 + Math.min(node.links.length * 2, 16);
         circle.setAttribute("r", radius);
         circle.setAttribute("fill", "#161b22");
         circle.setAttribute("stroke", typeColors[node.type]);
@@ -399,7 +454,7 @@ function initGraph() {
         const text = document.createElementNS("http://www.w3.org/2000/svg", "text");
         text.setAttribute("dx", radius + 6);
         text.setAttribute("dy", "4");
-        text.textContent = node.title.length > 24 ? node.title.substring(0, 22) + "..." : node.title;
+        text.textContent = node.title.length > 22 ? node.title.substring(0, 20) + "..." : node.title;
 
         g.appendChild(circle);
         g.appendChild(text);

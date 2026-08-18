@@ -4,6 +4,21 @@ Chronological audit log of all wiki ingests, queries, syntheses, and linting pas
 
 ---
 
+## [2026-08-19] synthesis | From Bush & Engelbart to Agentic Co-Intelligence
+- **Operation:** Query & Compound Synthesis
+- **Created Synthesis:** [[wiki/syntheses/engelbart-bush-symbiosis-ai|From Bush and Engelbart to LLM Agentic Co-Intelligence]]
+- **Touched:** `wiki/index.md`, `wiki/entities/vannevar-bush.md`, `js/index.js`
+- **Summary:** Synthesized the theoretical bridge between Bush's associative trails, Engelbart's H-LAM/T cognitive system, and modern LLM-driven knowledge bases.
+
+## [2026-08-19] ingest | Augmenting Human Intellect (Douglas Engelbart, 1962)
+- **Operation:** Source Ingest & Graph Expansion
+- **Raw File:** `raw/papers/augmenting-human-intellect-engelbart-1962.md`
+- **Source Note:** [[wiki/sources/augmenting-human-intellect-engelbart-1962|Augmenting Human Intellect: A Conceptual Framework (Engelbart, 1962)]]
+- **Created Pages:**
+  - [[wiki/entities/douglas-engelbart|Douglas Engelbart]]
+  - [[wiki/concepts/h-lam-t-system|The H-LAM/T System]]
+- **Summary:** Ingested the foundational 1962 SRI report introducing the H-LAM/T system, external symbol manipulation, and recursive bootstrapping.
+
 ## [2026-08-19] feat | Knowledge Workbench & Marp Slide Deck
 - **Operation:** Tooling & Presentation Synthesis
 - **Created Synthesis:** [[wiki/syntheses/llm-wiki-architecture-slides|Slide Deck: LLM Wiki Architecture]]
