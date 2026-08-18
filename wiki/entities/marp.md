@@ -37,3 +37,4 @@ paginate: true
 ## Relationships
 - Integrates with [[obsidian]].
 - Referenced in [[llm-wiki-concept]].
+- Demonstration slide deck: [[llm-wiki-architecture-slides|Slide Deck: LLM Wiki Architecture]].

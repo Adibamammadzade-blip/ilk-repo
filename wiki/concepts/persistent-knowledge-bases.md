@@ -41,5 +41,7 @@ flowchart TD
 
 ## Associated Entities & Sources
 - Discussed in detail in [[llm-wiki-concept]].
+- Historical foundation established by [[vannevar-bush]] in [[as-we-may-think-bush-1945]].
+- Implements non-linear [[associative-trails]] across structured markdown.
 - Visualized in [[obsidian]].
-- Comparative synthesis available at [[rag-vs-llm-wiki]].
+- Comparative synthesis available at [[rag-vs-llm-wiki]] and [[memex-to-llm-wiki-evolution]].

@@ -3,10 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My first repository</title>
+    <meta name="description" content="LLM Wiki Knowledge Hub & Graph Explorer - A persistent, compounding knowledge base interface.">
+    <title>LLM Wiki | Knowledge Graph Explorer & Hub</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
-    <h1>My first repository</h1>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                        <path d="M2 12h20"></path>
+                    </svg>
+                </div>
+                <div class="brand-text">
+                    <h2>LLM Wiki</h2>
+                    <span class="badge live-badge">Vault Active</span>
+                </div>
+            </div>
+
+            <!-- Stats Overview -->
+            <div class="vault-stats">
+                <div class="stat-card">
+                    <span class="stat-value" id="stat-total-nodes">15</span>
+                    <span class="stat-label">Total Nodes</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value" id="stat-links">26</span>
+                    <span class="stat-label">Connections</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value" id="stat-health">100%</span>
+                    <span class="stat-label">Graph Health</span>
+                </div>
+            </div>
+
+            <!-- Category Filter Tabs -->
+            <div class="nav-section">
+                <span class="nav-heading">Filter by Type</span>
+                <nav class="nav-filters" id="category-filters">
+                    <button class="filter-btn active" data-type="all">
+                        <span class="filter-indicator all"></span>
+                        All Vault Nodes <span class="count-badge" id="count-all">15</span>
+                    </button>
+                    <button class="filter-btn" data-type="concept">
+                        <span class="filter-indicator concept"></span>
+                        Concepts <span class="count-badge" id="count-concept">2</span>
+                    </button>
+                    <button class="filter-btn" data-type="synthesis">
+                        <span class="filter-indicator synthesis"></span>
+                        Syntheses <span class="count-badge" id="count-synthesis">3</span>
+                    </button>
+                    <button class="filter-btn" data-type="entity">
+                        <span class="filter-indicator entity"></span>
+                        Entities & Tools <span class="count-badge" id="count-entity">7</span>
+                    </button>
+                    <button class="filter-btn" data-type="source">
+                        <span class="filter-indicator source"></span>
+                        Ingested Sources <span class="count-badge" id="count-source">3</span>
+                    </button>
+                </nav>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="sidebar-footer">
+                <div class="terminal-tip">
+                    <span class="tip-icon">⚡</span>
+                    <p>Run <code>python/wiki_search.py</code> or <code>python/wiki_lint.py</code> in CLI</p>
+                </div>
+                <div class="branch-status">
+                    <span class="branch-dot"></span> Branch: <strong>mehriban</strong>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content View -->
+        <main class="main-content">
+            <!-- Header Bar -->
+            <header class="top-header">
+                <div class="search-wrapper">
+                    <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input type="text" id="wiki-search-input" placeholder="Search concepts, entities, syntheses, or tags (e.g., 'memex', 'rag', 'bush')..." autocomplete="off">
+                    <kbd class="search-kbd">/</kbd>
+                </div>
+
+                <div class="view-toggles">
+                    <button class="toggle-btn active" id="btn-view-cards" title="Grid View">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="7" height="7"></rect>
+                            <rect x="14" y="3" width="7" height="7"></rect>
+                            <rect x="14" y="14" width="7" height="7"></rect>
+                            <rect x="3" y="14" width="7" height="7"></rect>
+                        </svg>
+                        <span>Catalog</span>
+                    </button>
+                    <button class="toggle-btn" id="btn-view-graph" title="Graph View">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="6" cy="6" r="3"></circle>
+                            <circle cx="18" cy="6" r="3"></circle>
+                            <circle cx="18" cy="18" r="3"></circle>
+                            <circle cx="6" cy="18" r="3"></circle>
+                            <path d="M8.5 7.5l7 3M8.5 16.5l7-3M6 9v6M18 9v6"></path>
+                        </svg>
+                        <span>Graph Visualizer</span>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Main Display Area -->
+            <section class="content-body">
+                <!-- Cards Grid View -->
+                <div id="catalog-view" class="view-panel active">
+                    <div class="section-intro">
+                        <div class="intro-text">
+                            <h1 id="view-title">Knowledge Base Catalog</h1>
+                            <p id="view-subtitle">Living markdown nodes compiled and maintained continuously by your LLM Agent.</p>
+                        </div>
+                        <div class="sort-controls">
+                            <label for="sort-select">Sort by:</label>
+                            <select id="sort-select">
+                                <option value="connections">Most Connected</option>
+                                <option value="title">Alphabetical (A-Z)</option>
+                                <option value="type">Category</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="nodes-grid" id="nodes-grid-container">
+                        <!-- Dynamic Node Cards Injected by JS -->
+                    </div>
+                </div>
+
+                <!-- Interactive Graph Visualizer View -->
+                <div id="graph-view" class="view-panel">
+                    <div class="graph-toolbar">
+                        <div class="graph-info">
+                            <h3>Interactive Associative Graph</h3>
+                            <p>Click on any node to inspect relationships, backlinks, and excerpts.</p>
+                        </div>
+                        <div class="graph-legend">
+                            <span class="legend-item"><span class="legend-dot concept"></span> Concept</span>
+                            <span class="legend-item"><span class="legend-dot synthesis"></span> Synthesis</span>
+                            <span class="legend-item"><span class="legend-dot entity"></span> Entity</span>
+                            <span class="legend-item"><span class="legend-dot source"></span> Source</span>
+                        </div>
+                    </div>
+                    <div class="graph-canvas-container" id="graph-container">
+                        <svg id="knowledge-graph-svg" width="100%" height="600"></svg>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Slide-over Inspector Modal -->
+        <div class="node-modal-backdrop" id="modal-backdrop"></div>
+        <div class="node-modal" id="node-modal">
+            <div class="modal-header">
+                <span class="modal-type-badge" id="modal-badge">CONCEPT</span>
+                <button class="close-modal-btn" id="close-modal-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h2 id="modal-title">Node Title</h2>
+                <div class="modal-tags" id="modal-tags"></div>
+                <div class="modal-meta" id="modal-meta"></div>
+                <div class="modal-divider"></div>
+                <div class="modal-summary" id="modal-summary"></div>
+                <div class="modal-divider"></div>
+                <div class="modal-connections-section">
+                    <h4>Connected Associative Trails & Backlinks</h4>
+                    <ul class="modal-links-list" id="modal-links"></ul>
+                </div>
+                <div class="modal-footer-path">
+                    <span class="path-label">File Path:</span>
+                    <code id="modal-file-path">wiki/...</code>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script Logic -->
+    <script src="../js/index.js"></script>
 </body>
 </html>
