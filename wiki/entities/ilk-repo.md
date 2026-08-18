@@ -25,6 +25,7 @@ status: growing
 
 ## Key Modules & Roles
 - **Python Demonstration:** Contains an OOP `Repository` model and foundational data structure examples.
+- **Local Search Engine (`python/wiki_search.py`):** Standalone zero-dependency search tool for ranking and querying wiki notes.
 - **Web UI:** Minimal dark-themed starting page.
 
 ## Sources & Mentions

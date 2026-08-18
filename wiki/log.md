@@ -4,6 +4,12 @@ Chronological audit log of all wiki ingests, queries, syntheses, and linting pas
 
 ---
 
+## [2026-08-18] feat | Local Wiki Search Engine (wiki_search.py)
+- **Operation:** Tooling & Ingest
+- **Added Tool:** `python/wiki_search.py`
+- **Touched:** `wiki/sources/codebase-starter-modules.md`, `wiki/entities/ilk-repo.md`
+- **Summary:** Built and registered a zero-dependency local CLI search engine for the LLM Wiki supporting keyword scoring, YAML frontmatter filtering, and snippet previews.
+
 ## [2026-08-18] lint | Link Resolution & Entity Expansion Pass
 - **Operation:** Vault Health Audit & Lint
 - **Resolved Entities:** [[wiki/entities/dataview|Dataview]], [[wiki/entities/marp|Marp]], [[wiki/entities/qmd|qmd]]

@@ -20,11 +20,9 @@ The starter codebase for [[ilk-repo]] contains a minimal web frontend (HTML/CSS/
 - **CSS (`css/index.css`):** Dark mode theme (`background-color: black; color: white`), universal box-sizing reset, centered `<h1>`.
 - **JS (`js/index.js`):** Basic DOM manipulation script logging `"Hello World!"` and dynamically changing `<h1>` color to red.
 
-### 2. Python Core (`python/main.py`)
-Authored by Suleiman, providing a structured demonstration of Python core mechanics:
-- **Functions & Type Hints:** `greet(name: str) -> str`
-- **Data Structures:** Lists (`languages`), Dictionaries (`project_info`), and List Comprehensions (`squares = [x ** 2 for x in range(1, 6)]`).
-- **Object-Oriented Programming (OOP):** `Repository` class tracking `name` and `branch` with method `get_status()`.
+### 2. Python Core (`python/main.py`, `python/wiki_search.py`)
+- **Main Demo (`python/main.py`):** Authored by Suleiman, providing a structured demonstration of Python core mechanics (functions, types, list comprehensions, and OOP `Repository` model).
+- **Search CLI (`python/wiki_search.py`):** Zero-dependency local CLI search engine that scans frontmatter metadata and body content with relevance ranking and snippet extraction.
 
 ## Entities & Concepts Connected
 - Entity: [[ilk-repo|ilk-repo Project]]
