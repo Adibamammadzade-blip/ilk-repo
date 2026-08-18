@@ -4,6 +4,13 @@ Chronological audit log of all wiki ingests, queries, syntheses, and linting pas
 
 ---
 
+## [2026-08-19] feat | Knowledge Workbench & Marp Slide Deck
+- **Operation:** Tooling & Presentation Synthesis
+- **Created Synthesis:** [[wiki/syntheses/llm-wiki-architecture-slides|Slide Deck: LLM Wiki Architecture]]
+- **Updated UI:** `html/index.html`, `css/index.css`, `js/index.js`
+- **Touched:** `wiki/index.md`, `wiki/entities/marp.md`
+- **Summary:** Built a modern interactive Obsidian-themed browser dashboard with SVG Knowledge Graph visualizer and slide-over inspector, alongside a 6-slide Marp presentation deck.
+
 ## [2026-08-19] lint | Automated Graph Health & Integrity Audit
 - **Operation:** Vault Health Audit & Tooling
 - **Added Tool:** `python/wiki_lint.py`

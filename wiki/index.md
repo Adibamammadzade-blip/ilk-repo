@@ -21,6 +21,7 @@ Welcome to your LLM-maintained Knowledge Base. This index is a living catalog of
 - [[memex-to-llm-wiki-evolution|Synthesis: From Memex to LLM Wiki — Solving the Knowledge Maintenance Bottleneck]]: 80-year evolution of associative thought from 1945 Memex and Zettelkasten to autonomous LLM Wikis.
 - [[rag-vs-llm-wiki|Synthesis: RAG vs LLM-Maintained Wiki]]: Detailed comparative matrix between traditional vector retrieval and compounding wikis.
 - [[obsidian-llm-wiki-guide|Guide: Obsidian & The LLM Wiki Paradigm]]: Deep-dive guide explaining the human-agent collaboration and Obsidian IDE workflow.
+- [[llm-wiki-architecture-slides|Slide Deck: LLM Wiki Architecture]]: Marp presentation deck summarizing the tri-layer architecture and operational workflows.
 
 ## 📚 Ingested Sources
 - [[llm-wiki-concept|LLM Wiki: A Pattern for Building Personal Knowledge Bases Using LLMs]] (2026-08-18) — Founding idea document defining the 3-layer architecture.
